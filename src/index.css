@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.accordian-container {
+  margin: 4.2rem;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 1.8rem 4.8rem;
+}
+.accordian-container h1 {
+  font-size: 4.2rem;
+  margin-bottom: 2.4rem;
+}
+.accordian-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #00000013;
+  padding-bottom: 1.8rem;
+  cursor: pointer;
+}
+
+.accordian-question p {
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+.not-selected {
+  background-color: blueviolet !important;
+}
+
+.accordian-question button {
+  border: none;
+  padding: 0.4rem 1.1rem;
+  border-radius: 50%;
+  background-color: black;
+  color: #fff;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 3rem; /* Set a fixed height */
+  width: 3rem; /* Set a fixed width */
+  cursor: pointer;
+}
+
+.answer {
+  margin-bottom: 1.4rem;
+}
+.answer p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.726);
+}
+
+.hide {
+  display: none;
+}
